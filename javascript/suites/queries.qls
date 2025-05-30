@@ -1,0 +1,9 @@
+- import: codeql-suites/javascript-security-and-quality.qls
+  from: codeql-javascript
+- include:
+    kind: problem
+    tags contain:
+      - olos-security
+- include:
+    query path:
+      - queries/example.ql
